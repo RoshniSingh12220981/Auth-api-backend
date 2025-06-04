@@ -1,13 +1,16 @@
- #INTERN BACKEND PROJECT
- 
-This is a complete **Node.js + Express + MongoDB** backend project built for internship evaluation purposes.
-It includes user authentication, profile management, user preferences, and a dashboard summary endpoint. JWT is used for secure login, and the backend is modularly structured.
+# Intern Backend Project - Complete Node.js Authentication & User Management API
 
-# Live Demo
-🚀 **Deployed on Render**: [https://backendauthintern.onrender.com](https://backendauthintern.onrender.com)  
+# Project Overview
 
-## 📁 Folder Structure
+This is a complete **Node.js + Express + MongoDB** backend project built for internship evaluation purposes. It implements user authentication, profile management, user preferences, and a dashboard summary endpoint. JWT is used for secure login, and the backend follows a modular architecture.
 
+## Live Demo
+
+🚀 **Deployed on Render**: [https://backendauthintern.onrender.com](https://backendauthintern.onrender.com/)
+
+## Project Structure
+
+```
 auth-settings-api/
 ├── controllers/
 │   ├── authController.js
@@ -27,8 +30,10 @@ auth-settings-api/
 ├── .env
 ├── app.js
 └── server.js
+```
 
-## Tech Stack
+## Technology Stack
+
 - Node.js
 - Express.js
 - MongoDB + Mongoose
@@ -38,45 +43,71 @@ auth-settings-api/
 - dotenv
 - Render (for deployment)
 
-#INSTRUCTIONS TO LOCALLY RUN THIS
+## Local Development Setup
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/internBackend.git
-   cd internBackend
-   
-2. You need to create a `.env` file in root like: (FOR SECURITY AND UNDER GOOD DEVLOPMRNT PRACTICE I HAVE ADD MY .env DEATILS IN .gitignore
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/internBackend.git
+cd internBackend
+```
+
+### 2. Environment Configuration
+
+Create a `.env` file in the root directory with the following variables:
+
+```
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 PORT=5000
+```
 
-3. npm install -> npm run dev
+*Note: The .env file is included in .gitignore for security best practices*
 
-##API Endpoints
-User Authentication
-POST /api/register
-Register a new user
-Input: { name, email, password }
+### 3. Installation and Running
 
-POST /api/login
-Login and get JWT token
-Input: { email, password }
+```bash
+npm install
+npm run dev
+```
 
-GET /api/profile (Protected)
-Fetch logged-in user details
+## API Documentation
 
-PATCH /api/profile (Protected)
-Update name/email
+### Authentication Endpoints
 
-##User Preferences API
-POST /api/preferences (Protected)
-Save or update preferences
-Input: { theme, dashboardLayout }
+- POST /api/register
+    
+    **Description:** Register a new user
+    **Input:** { name, email, password }
+    
+- POST /api/login
+    
+    **Description:** Login and get JWT token
+    **Input:** { email, password }
+    
+- GET /api/profile (Protected)
+    
+    **Description:** Fetch logged-in user details
+    
+- PATCH /api/profile (Protected)
+    
+    **Description:** Update name/email
+    
 
-GET /api/preferences (Protected)
-Fetch user preferences
+### User Preferences Endpoints
 
-##Bonus: Dashboard Summary
-GET /api/dashboard-summary
-Returns dummy project/team/notification stats
+- POST /api/preferences (Protected)
+    
+    **Description:** Save or update preferences
+    **Input:** { theme, dashboardLayout }
+    
+- GET /api/preferences (Protected)
+    
+    **Description:** Fetch user preferences
+    
 
+### Dashboard Endpoint
+
+- GET /api/dashboard-summary
+    
+    **Description:** Returns dummy project/team/notification stats
