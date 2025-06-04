@@ -111,3 +111,6 @@ npm run dev
 - GET /api/dashboard-summary
     
     **Description:** Returns dummy project/team/notification stats
+
+  ![Screenshot (772)](https://github.com/user-attachments/assets/bb1da653-5572-4d63-b74f-9badf082dd9a)
+
