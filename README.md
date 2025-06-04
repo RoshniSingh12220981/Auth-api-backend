@@ -111,13 +111,13 @@ npm run dev
 - GET /api/dashboard-summary
     
     **Description:** Returns dummy project/team/notification stats
-### Sample screenshots
+### Sample screenshots of Deployment and API endpoint testing in Postman
 
-  ![Screenshot (772)](https://github.com/user-attachments/assets/bb1da653-5572-4d63-b74f-9badf082dd9a)
-  ![Screenshot (771)](https://github.com/user-attachments/assets/730d7e16-f991-4a0b-9570-12299cbad632)
-  ![Screenshot (767)](https://github.com/user-attachments/assets/d887a054-557f-4cd3-83cc-60cd1740bb17)
-  ![Screenshot (764)](https://github.com/user-attachments/assets/59470d11-fc1b-455d-a4fb-1976464940bc)
-  ![Screenshot (766)](https://github.com/user-attachments/assets/7a32c95d-cb78-4db9-a47d-a9779cd2add9)
+  # ![Screenshot (772)](https://github.com/user-attachments/assets/bb1da653-5572-4d63-b74f-9badf082dd9a) 
+  # ![Screenshot (771)](https://github.com/user-attachments/assets/730d7e16-f991-4a0b-9570-12299cbad632)
+  # ![Screenshot (767)](https://github.com/user-attachments/assets/d887a054-557f-4cd3-83cc-60cd1740bb17)
+  # ![Screenshot (764)](https://github.com/user-attachments/assets/59470d11-fc1b-455d-a4fb-1976464940bc)
+  # ![Screenshot (766)](https://github.com/user-attachments/assets/7a32c95d-cb78-4db9-a47d-a9779cd2add9)
 
 
 
