@@ -15,6 +15,7 @@ const generateToken = (userId) => {
 // Register a new user
 exports.register = async (req, res) => {
   try {
+    // Data is already validated by middleware
     const { name, email, password } = req.body;
 
     // Check if the user already exists
@@ -48,6 +49,7 @@ exports.register = async (req, res) => {
 // Login existing user
 exports.login = async (req, res) => {
   try {
+    // Data is already validated by middleware
     const { email, password } = req.body;
 
     // Find user by email
